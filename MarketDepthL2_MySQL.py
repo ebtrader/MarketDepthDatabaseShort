@@ -223,7 +223,7 @@ class TestApp(EWrapper, EClient):
         timestamp = now.strftime("%d/%m/%Y %H:%M:%S")
         print("UpdateMarketDepthL2. ReqId:", reqId, "Position:", position, "Operation:",
               operation, "Side:", side, "Price:", price, "Size:", size, "Time:", timestamp)
-
+        self.persistData(reqId, position, operation, side, price, size, timestamp)
         #self.df.loc[len(self.df)] = [reqId, position, operation, side, price, size, timestamp]
         #self.df.to_csv('program_L2.csv')
     # ! [updatemktdepthl2]

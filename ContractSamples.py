@@ -268,7 +268,7 @@ class ContractSamples:
         contract.secType = "FUT"
         contract.exchange = "GLOBEX"
         contract.currency = "USD"
-        contract.lastTradeDateOrContractMonth = "202103"
+        contract.lastTradeDateOrContractMonth = "202106"
         #! [futcontract]
         return contract
 
